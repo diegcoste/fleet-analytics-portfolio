@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fleetlib"
+version = "1.0.0"
+description = "Lógica de negocio reutilizable del portafolio de Fleet Analytics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Diego Coste" }]
+dependencies = ["pandas>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "numpy>=1.26"]
+scraping = ["playwright>=1.45", "beautifulsoup4>=4.12"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["projects/**/notebooks/*.py"]   # notebooks de Databricks usan `spark`/`display` globales
