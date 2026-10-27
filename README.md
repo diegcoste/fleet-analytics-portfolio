@@ -28,7 +28,7 @@ cobranza y recuperación, multas y tenencias, siniestros, talleres, gestoría ve
 |---|---|
 | Ver el panorama en 2 minutos | La tabla de proyectos de abajo ⬇️ |
 | Arquitectura de datos | [`docs/arquitectura.md`](docs/arquitectura.md) |
-| Trabajo profesional reciente que complementa los 10 proyectos | [`docs/proyectos-complementarios.md`](docs/proyectos-complementarios.md) |
+| Casos adicionales trabajados después del catálogo principal | [`docs/proyectos-adicionales.md`](docs/proyectos-adicionales.md) |
 | Cómo pienso un análisis (discovery → plan A/B) | [`docs/metodologia-discoveries.md`](docs/metodologia-discoveries.md) |
 | SQL reutilizable (IQR, dedup con prioridad, flujos con `LAG`, días hábiles…) | [`docs/patrones-sql.md`](docs/patrones-sql.md) |
 | Código Python probado con tests | [`src/fleetlib/`](src/fleetlib) · [`tests/`](tests) |
